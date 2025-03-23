@@ -31,4 +31,4 @@ jobs:
         pip install bidict lunar_python colorama
     - name: Run
       run: |
-         python bazi.py ${{inputs.bir}}
+         python bazi.py -g ${{inputs.bir}}
