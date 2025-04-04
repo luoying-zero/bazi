@@ -6,14 +6,13 @@ name: Option
 on:
   workflow_dispatch:
     inputs:
-      bir:
+      opt:
         required: false
         type: string
         default: ""
 
 jobs:
-  build:
-
+  Run:
     runs-on: ubuntu-latest
 
     steps:
