@@ -20,7 +20,7 @@ jobs:
     - uses: actions/setup-python@v3
     - name: Install dependencies
       run: |
-        pip install bidict lunar_python colorama
+        pip install bidict lunar_python colorama sxtwl
     - name: Run
       run: |
          python bazi.py ${{inputs.opt}}
