@@ -479,14 +479,12 @@ for i in range(3):
 print()
 print("-"*120)       
 
+print("大运：", end=' ')
+for item in dayuns:
+    print(item, end=' ')
+print()
 
-if options.b:
-    print("大运：", end=' ')
-    for item in dayuns:
-        print(item, end=' ')
-    print()
-
-else:
+if not options.b:
     for dayun in yun.getDaYun()[1:]:
         gan_ = dayun.getGanZhi()[0]
         zhi_ = dayun.getGanZhi()[1]
