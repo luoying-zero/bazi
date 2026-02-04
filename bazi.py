@@ -477,8 +477,17 @@ for i in range(3):
     if zhi_atts[zhis[i]]['刑'] == zhis[i+1] or zhi_atts[zhis[i+1]]['刑'] == zhis[i]:
         zhi_xing[i] = zhi_xing[i+1] = True
 print()
-print("-"*120)       
+print("-"*120)     
 
+for item in gans:
+    zangs[gan_zangs[item]] += 1
+for item in zhis:
+    zangs[zhi_zangs[item]] += 1
+
+for k, v in zangs.items():
+    print(f"{k}: {v}", end="  ")
+print()
+print("-"*120)  
 print("大运：", end=' ')
 for item in dayuns:
     print(item, end=' ')
